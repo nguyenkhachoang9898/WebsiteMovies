@@ -1,0 +1,212 @@
+:root {
+    --bgColor: #000000;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --mainfont: Ubuntu;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bangers;
+    src:url('../fonts/Bangers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nboxright
+{
+
+  
+    width: 650px;
+    height:1200px;
+    margin-top: 40px;
+    position: relative;
+    right: 18px;
+  
+  
+  
+}
+.ntextt {
+    height: 50px;
+    width: 650px;
+    color:var(--txtColor);
+    font-size: 35px;
+    font-weight: bold;
+    
+    padding: 5px 0px;
+    word-spacing: 3px;
+    
+  }
+  .nganhang
+  {
+    width: 626px;
+    height:120px;
+    margin-top:40px;
+    
+    font-size: 17px;
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+  }
+  .thanhtoan img
+  {
+    width:150px;
+    height:90px;
+
+  }
+  .thanhtoan
+  { 
+    
+    width:150px;
+    height:90px;
+    background-color: var(--txtColor);
+    
+  }
+  .hinhthuc
+  {    
+    
+    font-size: 14px;
+    word-spacing:3px;
+    line-height: 30px;
+    
+  }
+
+  .nbox
+  {
+      width: 960px;
+      height: 1500px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+  
+  }
+  .thanhtoann
+  { 
+    
+    width:150px;
+    height:auto;
+    
+  }
+  .thanhtoann img
+  { 
+    
+    width:150px;
+    height:auto;
+    
+  }
+  .nganhangn
+  {
+    width: 650px;
+    height:120px;
+    margin-top:40px;
+    
+    font-size: 17px;
+  
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+.ubox .nboxleft .utexttrai li a
+{
+    display: block;
+    padding-left:10px;
+}
+
+.ubox .nboxleft .utexttrai li.active
+{
+    background-color: var(--btnColor);
+}
+
+.ubox .nboxleft .utexttrai li.active:hover
+{
+    background-color: var(--btnColor);
+}
+
+.ubox .nboxleft .utexttrai li:hover
+{
+    background-color:var(--bgSchedule);
+    
+}
+
+.nboxleft
+{
+
+    background-color: var(--boxColor);
+    width: 250px;
+    height: 1100px;
+    margin-top: 40px;
+    position: relative;
+    left: 18px;
+}
+
+.ntexttgd {
+    height: 50px;
+    width: 650px;
+    color:var(--txtColor);
+    font-size: 35px;
+    font-weight: bold;
+    margin-top:110px;
+    
+    padding: 5px 0px;
+    word-spacing: 3px;
+    
+  }
+
+  .conga
+  {
+    width:650px;
+    height:150px;
+    text-align: center;
+
+  }
+  .conga img
+  {
+
+    width:250px;
+    height:150px;
+
+  }

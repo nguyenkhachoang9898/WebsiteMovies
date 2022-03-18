@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHD Movies - Xem phim hoạt hình trực tuyến, phụ đề tiếng Việt</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/category.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body>
+    <div id="container">
+        <!-- START: Header -->
+        <header>
+            <!-- START: TOP - Phần này chứa Menu, Logo, Search, Social Network, nút Đăng nhập -->
+            <div class="top">
+                <!-- START: Menu -->
+                <div class="menu">
+                    <div class="fa fa-bars icon"></div>
+                    <nav>
+                        <ul class="mainMenu">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li>
+                                <a href="#">Thể loại</a>
+                                <ul class="subMenu">
+                                    <li><a href="category.html">Hành động</a></li>
+                                    <li><a href="category.html">Tình cảm</a></li>
+                                    <li><a href="category.html">Phiêu lưu</a></li>
+                                    <li><a href="category.html">Khoa học viễn tưởng</a></li>
+                                    <li><a href="category.html">Âm nhạc</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Hình thức</a>
+                                <ul class="subMenu">
+                                    <li><a href="category.html">Phim bộ</a></li>
+                                    <li><a href="category.html">Phim lẻ</a></li>
+                                    <li><a href="category.html">OVA</a></li>
+                                    <li><a href="category.html">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="category.html">Mới nhất</a></li>
+                            <li><a href="category.html">Vừa cập nhật</a></li>
+                            <li><a href="category.html">Đang chiếu</a></li>
+                            <li><a href="schedule.html">Lịch phát sóng</a></li>
+                            <li><a href="news/news-grid.html">Tin tức</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- END: Menu -->
+                <!-- START: Logo -->
+                <div class="logo">
+                    <img src="../images/LogoPHD.png" alt="Logo PHD">
+                </div>
+                <!-- END: Logo -->
+                <!-- START: Box Search -->
+                <div class="boxSearch">
+                    <input type="text" class="searchBar" placeholder="Nhập tên phim">
+                    <div class="fa fa-search icon"></div>
+                </div>
+                <!-- END: Box Search -->
+                <!-- START: Social Network Area -->
+                <div class="swArea">
+                    <a href="#"><div class="frame" style="background-color: #3b5998;">
+                        <div class="fa fa-facebook"></div>
+                    </div></a>
+                    <a href="#"><div class="frame" style="background-color: #34B3F7;">
+                        <div class="fa fa-twitter"></div>
+                    </div></a>
+                    <a href="#"><div class="frame" style="background-image: linear-gradient(#6C26BD,#F28F33);">
+                        <div class="fa fa-instagram"></div>
+                    </div></a>
+                    <a href="#"><div class="frame" style="background-color: #DD756A;">
+                        <div class="fa fa-google-plus"></div>
+                    </div></a>
+                    <div class="clr"></div>
+                </div>
+                <!-- END: Social Network Area -->
+                <div class="signIn">
+                    <a href="#"><button>Đăng Nhập</button></a>
+                </div>
+            </div>
+            <!-- END: TOP - Phần này chứa Menu, Logo, Search, Social Network, nút Đăng nhập -->
+        </header>
+        <!-- END: Header -->
+
+        <!-- START: Content -->
+        <div id="content">
+            <!-- START: LEFT -->
+            <div class="left">
+                <!-- START: Breadcrumb -->
+                <div class="breadcrumb">
+                    <ul>
+                        <li class="parent"><a href="../index.html">Trang Chủ</a></li>
+                        <li class="child">Tình Cảm</li>
+                    </ul>
+                </div>
+                <!-- END: Breadcrumb -->
+
+                <!-- START: Filter trên Category -->
+                <form action="#" method="POST" id="Filter-Form">
+                    <div class="filterCate">
+                        <div class="field1">
+                            <div class="_1Filter">
+                                <select name="genre" id="genre">
+                                    <!-- <option value="#">Thể loại</option> -->
+                                    <option value="action">Hành động</option>
+                                    <option value="romance">Tình cảm</option>
+                                    <option value="adventure">Phiêu lưu</option>
+                                    <option value="sci-fi">Khoa học viễn tưởng</option>
+                                    <option value="music">Âm nhạc</option>
+                                </select>
+                            </div>
+                            <div class="_1Filter">
+                                <select name="season" id="season" class="down">
+                                    <option value="#">Mùa</option>
+                                    <option value="spring">Xuân</option>
+                                    <option value="summer">Hạ</option>
+                                    <option value="fall">Thu</option>
+                                    <option value="winter">Đông</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="field1">
+                            <div class="_1Filter">
+                                <select name="type" id="type">
+                                    <option value="#">Hình thức</option>
+                                    <option value="series">Phim bộ</option>
+                                    <option value="movies">Phim lẻ</option>
+                                    <option value="ova">OVA</option>
+                                    <option value="others">Khác</option>
+                                </select>
+                            </div>
+                            <div class="_1Filter">
+                                <select name="lang" id="lang" class="down">
+                                    <option value="dub">Thuyết minh</option>
+                                    <option value="sub">Phụ đề</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="field1">
+                            <div class="_1Filter">
+                                <select name="country" id="country">
+                                    <option value="#">Quốc gia</option>
+                                    <option value="japan">Nhật Bản</option>
+                                    <option value="china">Trung Quốc</option>
+                                </select>
+                            </div>
+                            <div class="_1Filter">
+                                <select name="year" id="year" class="down">
+                                    <option value="#">Năm</option>
+                                    <option value="all">Tất cả</option>
+                                    <option value="80s">80s</option>
+                                    <option value="90s">90s</option>
+                                    <option value="00s">00s</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="field1">
+                            <div class="_1Filter">
+                                <select name="status" id="status">
+                                    <option value="#">Trạng thái</option>
+                                    <option value="airing">Đang chiếu</option>
+                                    <option value="complete">Hoàn thành</option>
+                                    <option value="pause">Tạm ngưng</option>
+                                </select>
+                            </div>
+                            <div class="_1Filter">
+                                <select name="sort" id="sort" class="down">
+                                    <option value="atoz">A-Z</option>
+                                    <option value="ztoa">Z-A</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field2">
+                            <input type="search" placeholder="Tìm phim...">
+                            <div class="btnFilter">
+                                <div class="fa fa-filter icon"></div>
+                                <input type="submit" name="filter" id="submit" value="Lọc">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END: Filter trên Category -->
+
+                <!-- START: Hiển thị phim -->
+                <div class="filmContent">
+                        <div class="listFilm">
+                            <div class="_1Col">
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/10795.jpeg" alt="Assault Lily: Bouquet">
+                                        <div class="process">Ep 9/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Assault Lily: Bouquet</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/10829.jpeg" alt="Gekijouban Bem: Become Human">
+                                        <div class="process">Movies</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Gekijouban Bem: Become Human</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/235594.jpg" alt="Quanzhi Gaoshou 2">
+                                        <div class="process">Ep 12/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Quanzhi Gaoshou 2</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251007.jpg" alt="Dragon Quest: Dai no Daibouken (2020)">
+                                        <div class="process">Ep 11/?</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Dragon Quest: Dai no Daibouken (2020)</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/10784.jpeg" alt="Dungeon ni Deai o Motomeru no wa Machigatte Iru Darouka: Familia Myth III">
+                                        <div class="process">Ep 11/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Dungeon ni Deai o Motomeru no wa Machigatte Iru Darouka: Familia Myth III</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/245484.jpg" alt="Haikyuu!! To the Top (2020)">
+                                        <div class="process">Ep 11/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Haikyuu!! To the Top (2020)</a></span>
+                                </div>
+                            </div>
+                            <div class="_1Col">
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/245049.jpg" alt="Dounika Naru Hibi">
+                                        <div class="process">Movies</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Dounika Naru Hibi</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/247886.jpg" alt="Kuma Kuma Kuma Bear">
+                                        <div class="process">Ep 9/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Kuma Kuma Kuma Bear</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/249715.jpg" alt="Wave!! Surfing Yappe!!">
+                                        <div class="process">Ep 3/3</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Wave!! Surfing Yappe!!</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251066.jpg" alt="Han`you no Yashahime: Sengoku Otogizoushi">
+                                        <div class="process">Ep 11/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Han`you no Yashahime: Sengoku Otogizoushi</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/245102.jpg" alt="Hypnosis Mic: Division Rap Battle - Rhyme Anima">
+                                        <div class="process">Ep 11/13</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Hypnosis Mic: Division Rap Battle - Rhyme Anima</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/245096.jpg" alt="Inu to Neko Docchi mo Katteru to Mainichi Tanoshii">
+                                        <div class="process">Ep 11/24</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Inu to Neko Docchi mo Katteru to Mainichi Tanoshii</a></span>
+                                </div>
+                            </div>
+                            <div class="_1Col">
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/250318.jpg" alt="Dai 501 Tougou Sentou Koukuu Dan Strike Witches: Road to Berlin">
+                                        <div class="process">Ep 9/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Dai 501 Tougou Sentou Koukuu Dan Strike Witches: Road to Berlin</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251089.jpg" alt="100-man no Inochi no Ue ni Ore wa Tatte Iru">
+                                        <div class="process">Ep 10/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>100-man no Inochi no Ue ni Ore wa Tatte Iru</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251198.jpg" alt="Saikyou Kamizmode!">
+                                        <div class="process">Ep 20/?</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Saikyou Kamizmode!</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251937.jpg" alt="King`s Raid: Ishi o Tsugu Mono-tachi">
+                                        <div class="process">Ep 11/26</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>King`s Raid: Ishi o Tsugu Mono-tachi</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/252197.jpg" alt="Love Live! Nijigasaki Gakuen School Idol Doukoukai">
+                                        <div class="process">Ep 11/13</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Love Live! Nijigasaki Gakuen School Idol Doukoukai</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/248765.jpg" alt="Rail Romanesque">
+                                        <div class="process">Ep 11/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Rail Romanesque</a></span>
+                                </div>
+                            </div>
+                            <div class="_1Col">
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251535.jpg" alt="Higurashi no Naku Koro ni Gou">
+                                        <div class="process">Ep 11/24</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Higurashi no Naku Koro ni Gou</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251628.jpg" alt="Burn the Witch">
+                                        <div class="process">Movies</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Burn the Witch</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251942.jpg" alt="Majo no Tabitabi">
+                                        <div class="process">Ep 10/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Majo no Tabitabi</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251703.jpg" alt="Sen`yoku no Sigrdrifa">
+                                        <div class="process">Ep 10/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Sen`yoku no Sigrdrifa</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/250848.jpg" alt="Tonikaku Kawaii">
+                                        <div class="process">Ep 11/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Tonikaku Kawaii</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251259.jpg" alt="Iwa Kakeru! Sport Climbing Girls">
+                                        <div class="process">Ep 11/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Iwa Kakeru! Sport Climbing Girls</a></span>
+                                </div>
+                            </div>
+                            <div class="_1Col">
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/252222.jpg" alt="Jujutsu Kaisen">
+                                        <div class="process">Ep 10/24</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Jujutsu Kaisen</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/252467.jpg" alt="Hallelujah: Unmei no Sentaku">
+                                        <div class="process">Ep 3/3</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Hallelujah: Unmei no Sentaku</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/252862.jpg" alt="Wo Wei Ge Kuang: Xuanlu Chongqi">
+                                        <div class="process">Ep 7/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Wo Wei Ge Kuang: Xuanlu Chongqi</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/251122.jpg" alt="Kami-tachi ni Hirowareta Otoko">
+                                        <div class="process">Ep 11/12</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Kami-tachi ni Hirowareta Otoko</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/245194.jpg" alt="Mahouka Koukou no Rettousei: Raihousha Hen">
+                                        <div class="process">Ep 11/13</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Mahouka Koukou no Rettousei: Raihousha Hen</a></span>
+                                </div>
+                                <div class="_1Film">
+                                    <a href="detail.html"><img src="../images/film/252051.jpg" alt="Munou na Nana">
+                                        <div class="process">Ep 11/13</div>
+                                        <div class="overlay"></div>
+                                        <div class="fa fa-play-circle-o icon"></div>
+                                    <span>Munou na Nana</a></span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- END: Hiển thị phim -->
+
+                <!-- START: Phân trang -->
+                <div class="pagination">
+                    <div class="btnPreNext">
+                        <a href="#">
+                            <div class="fa fa-angle-left icon"></div>
+                            <span>Trang trước</span>
+                        </a>
+                    </div>
+                    <div class="pageNumber">
+                        <span>trang</span>
+                        <div class="numberBox">
+                            <input type="text" placeholder="1">
+                        </div>
+                        <div class="btnBox"><a href="#">đến</a></div>
+                        <span>/ 100</span>
+                    </div>
+                    <div class="btnPreNext">
+                        <a href="#">
+                            <div class="fa fa-angle-right icon"></div>
+                            <span>Trang sau</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- END: Phân trang -->
+            </div>
+            <!-- END: LEFT -->
+            <!-- START: RIGHT -->
+            <div class="right">
+                <!-- START: Advertisement -->
+                <div class="ad">
+                    <a href="#"><img src="../images/qc2.jpg" alt="Quảng cáo">
+                    <div class="overlay"></div></a>
+                </div>
+                <!-- END: Advertisement -->
+
+                <!-- START: Top Anime -->
+                <div class="topAnime">
+                    <h2>Phổ biến nhất</h2>
+                    <div class="top1">
+                        <a href="detail.html">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <div class="infoRank">1</div>
+                                <div class="infoDetail">
+                                    <p class="title">One Piece</p>
+                                    <p><div class="fa fa-eye"></div> 500,000 &nbsp;<div class="fa fa-heart"></div> 70,000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">2</div>
+                                <div class="infoImage"><img src="../images/film/243815.jpg" alt="Naruto"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Naruto Shippuuden</p>
+                                    <p><div class="fa fa-eye"></div> 450,000 &nbsp;<div class="fa fa-heart"></div> 65,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">3</div>
+                                <div class="infoImage"><img src="../images/film/221823.jpg" alt="Fairy Tail"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Fairy Tail</p>
+                                    <p><div class="fa fa-eye"></div> 430,000 &nbsp;<div class="fa fa-heart"></div> 62,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">4</div>
+                                <div class="infoImage"><img src="../images/film/14058.jpg" alt="Dragon Ball"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Dragon Ball Z</p>
+                                    <p><div class="fa fa-eye"></div> 400,000 &nbsp;<div class="fa fa-heart"></div> 60,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">5</div>
+                                <div class="infoImage"><img src="../images/film/38169.jpg" alt="Pokemon"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Pokemon</p>
+                                    <p><div class="fa fa-eye"></div> 380,000 &nbsp;<div class="fa fa-heart"></div> 56,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">6</div>
+                                <div class="infoImage"><img src="../images/film/58683.jpg" alt="Meitantei Conan"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Meitantei Conan</p>
+                                    <p><div class="fa fa-eye"></div> 350,000 &nbsp;<div class="fa fa-heart"></div> 55,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">7</div>
+                                <div class="infoImage"><img src="../images/film/221544.jpg" alt="Death Note"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Death Note</p>
+                                    <p><div class="fa fa-eye"></div> 320,000 &nbsp;<div class="fa fa-heart"></div> 60,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">8</div>
+                                <div class="infoImage"><img src="../images/film/221067.jpg" alt="Shingeki no Kyojin"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Shingeki no Kyojin</p>
+                                    <p><div class="fa fa-eye"></div> 300,000 &nbsp;<div class="fa fa-heart"></div> 50,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">9</div>
+                                <div class="infoImage"><img src="../images/film/221536.jpg" alt="Hagane no Renkinjutsushi (2009)"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Hagane no Renkinjutsushi (2009)</p>
+                                    <p><div class="fa fa-eye"></div> 200,000 &nbsp;<div class="fa fa-heart"></div> 45,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">10</div>
+                                <div class="infoImage"><img src="../images/film/221857.jpg" alt="Sword Art Online"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Sword Art Online</p>
+                                    <p><div class="fa fa-eye"></div> 100,000 &nbsp;<div class="fa fa-heart"></div> 40,000</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+                </div>
+
+                <!-- END: Top Anime -->
+
+                <!-- START: Top Mua -->
+                <div class="topAnime">
+                    <h2>Mua nhiều nhất</h2>
+                    <div class="top1 buy">
+                        <a href="detail.html">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <div class="infoRank">1</div>
+                                <div class="infoDetail">
+                                    <p class="title">Spirited Away</p>
+                                    <p><div class="fa fa-eye"></div> 2,500 &nbsp;<div class="fa fa-dollar"></div> 50,000đ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">2</div>
+                                <div class="infoImage"><img src="../images/film/133583.jpg" alt="Laputa: Castle in the Sky"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Laputa: Castle in the Sky</p>
+                                    <p><div class="fa fa-eye"></div> 2,460 &nbsp;<div class="fa fa-dollar"></div> 50,000đ</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+
+                    <div class="topOther">
+                        <a href="detail.html">
+                            <div class="info">
+                                <div class="infoRank">3</div>
+                                <div class="infoImage"><img src="../images/film/224497.jpg" alt="Kiki's Delivery Service"></div>
+                                <div class="infoDetail">
+                                    <p class="title">Kiki's Delivery Service</p>
+                                    <p><div class="fa fa-eye"></div> 2,000 &nbsp;<div class="fa fa-dollar"></div> 50,000đ</p>
+                                </div>
+                            </div>    
+                        </a>
+                    </div>
+                </div>
+                <!-- END: Top Mua -->
+            </div>
+            <!-- END: RIGHT -->
+        </div>
+        <!-- END: Content -->
+    </div>
+
+    <!-- START: Footer -->
+    <footer>
+        <div class="left">
+            <img src="../images/LogoPHD.png" alt="Logo PHD" width="110px">
+            <p>&copy; 2020 - PHD Movies [LTT Coding Team]. Đã Đăng Ký Bản Quyền</p>
+            <div class="iconSW">
+                <div class="boxIcon"><a href="#"><div class="fa fa-facebook icon"></div></a></div>
+                <div class="boxIcon"><a href="#"><div class="fa fa-twitter icon"></div></a></div>
+                <div class="boxIcon"><a href="#"><div class="fa fa-instagram icon"></div></a></div>
+                <div class="boxIcon"><a href="#"><div class="fa fa-google-plus icon"></div></a></div>
+                <div class="clr"></div>
+            </div>
+            <p class="disclaim">Tất cả sản phẩm trên trang đều là phim bản quyền và được lưu trữ trực tiếp trên server của PHD.<br> Hãy tôn trọng bản quyền vì lợi ích của chính bạn.</p>
+        </div>
+        <div class="right">
+            <div class="struct">
+                <h3>Cơ Cấu</h3>
+                <ul>
+                    <li><a href="#">Cách Thức Hoạt Động</a></li>
+                    <li><a href="#">Phương Thức Thanh Toán</a></li>
+                    <li><a href="#">Yêu Cầu Phim</a></li>
+                    <li><a href="#">Hỏi & Đáp</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Liên Kết Ngoài</h3>
+                <ul>
+                    <li><a href="https://www.crunchyroll.com/">Crunchyroll</a></li>
+                    <li><a href="https://www.allcinema.net/">All Cinema</a></li>
+                    <li><a href="http://anison.info/">Anison</a></li>
+                    <li><a href="https://www.animenewsnetwork.com/">Anime News Network</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="representChar">
+            <img src="../images/gundam.png" alt="Gundam" width="500px">
+        </div>
+    </footer>
+    <!-- END: Footer -->
+
+    <!-- START: Navigation Bar -->
+    <div class="navBar">
+        <a href="#"><div class="fa fa-gift icon"></div></a>
+        <a href="news/news-grid.html"><div class="fa fa-newspaper-o icon"></div></a>
+        <a href="tel:0123456789"><div class="fa fa-phone icon"></div></a>
+    </div>
+    <!-- END: Navigation Bar -->
+</body>
+</html>

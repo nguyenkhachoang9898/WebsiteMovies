@@ -1,0 +1,96 @@
+:root {
+    --bgColor: #000000;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --mainfont: Ubuntu;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bangers;
+    src:url('../fonts/Bangers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.boxavatar img
+{
+    width:80px;
+    height:90px;
+
+}
+.tinput
+{
+  color:var(--btnColorhover);
+  width: 400px  ;
+  word-spacing: 2px;
+  line-height: 50px;
+  font-size: 14px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  margin-left:20px;
+  text-align: left;
+  float:left;
+  font-weight: bold;
+}
+
+.btnluu button {
+    width: 80px;
+    height: 30px;
+    background-color: var(--btnColor);
+    border-radius: 20px;
+    color: var(--txtColor);
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-family: ChakraPetch, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:15px;
+    
+}
+.btnluu button:hover {
+    background-color: var(--btnColorhover);
+}
+
+

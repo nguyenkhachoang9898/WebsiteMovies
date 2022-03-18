@@ -1,0 +1,1096 @@
+:root {
+    --bgColor: #000000;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --mainfont: Ubuntu;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bangers;
+    src:url('../fonts/Bangers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: var(--mainfont),'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--txtColor);
+}
+
+.clr {
+    clear: both;
+}
+
+.overlay {
+    background-color: #FFFFFF;
+    opacity: 0.6;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#container header {
+    width: 960px;
+}
+
+/* ==========================================HEADER - TOP========================================== */
+
+#container header .top {
+    width: 960px;
+    height: 65px;
+    display: flex;
+}
+
+/* MENU */
+
+#container header .top .menu {
+    width: 65px;
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+#container header .top .menu .icon {
+    margin: 20px 0 0 20px;
+}
+
+#container header .top .menu .icon:hover {
+    color: var(--btnColor);
+    cursor: pointer;
+}
+
+#container header .top .menu nav ul.mainMenu {
+    width: 120px;
+    height: 280px;
+    z-index: 950;
+    background-color: var(--btnColor);
+    position: absolute;
+    top: 65px;
+    left: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 6px #000000;
+    text-align: center;
+    display: none;
+}
+
+#container header .top .menu:hover ul.mainMenu {
+    display: block;
+}
+
+#container header .top .menu nav li {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+}
+
+#container header .top .menu nav li:hover {
+    transition: 0.8s;
+    background-color: var(--btnColorhover);
+    position: relative;
+}
+
+
+#container header .top .menu nav li a {
+    font-size: 13px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#container header .top .menu ul.subMenu {
+    background-color: var(--boxColor);
+    position: absolute;
+    top: 0;
+    left: 121px;
+    box-shadow: 2px 2px 10px 6px #000000;
+    border-radius: 5px;
+    display: none;
+}
+
+#container header .top .menu ul.mainMenu li:hover ul.subMenu {
+    display: block;
+}
+
+#container header .top .menu ul.subMenu li a {
+    font-size: 11px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#container header .top .logo {
+    width: 135px;
+}
+
+#container header .top .logo img {
+    width: 123px;
+    margin-top: 15px;
+}
+
+#container header .top .boxSearch {
+    color: var(--txtColor2);
+    position: relative;
+    width: 280px;
+}
+
+#container header .top .boxSearch .searchBar {
+    width: 260px;
+    height: 38px;
+    background: var(--boxColor);
+    border-radius: 20px;
+    margin-top: 15px;
+    color: var(--txtColor2);
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#container header .top .boxSearch .searchBar:hover {
+    background-color: #383737;
+}
+
+#container header .top .boxSearch .icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#container header .top .boxSearch .icon:hover {
+    color: var(--btnColor);
+    cursor: pointer;
+}
+
+#container header .top .swArea {
+    width: 355px;
+    height: 65px;
+}
+
+#container header .top .swArea .frame {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    float: left;
+    margin: 17px 10px 0 0;
+}
+
+#container header .top .swArea .frame:hover {
+    margin-top: 10px;
+    transition: 0.4s;
+}
+
+#container header .top .signIn {
+    width: 125px;
+}
+
+#container header .top .signIn button {
+    width: 100px;
+    height: 40px;
+    background-color: var(--btnColor);
+    border-radius: 20px;
+    color: var(--txtColor);
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-family: ChakraPetch, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container header .top .signIn button:hover {
+    background-color: var(--btnColorhover);
+}
+
+
+/* ==========================================HEADER - DOWN========================================== */
+#container header .down {
+    margin-top: 15px;
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container header .down .left {
+    width: 670px;
+}
+
+/* ==========================================SLIDESHOW========================================== */
+
+#container header .down .left .slideShow {
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--btnColor);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  background-color: var(--btnColor);
+  top: 0;
+  font-family: Bangers, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--btnColor);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+#container header .down .left .message {
+    width: 635px;
+    height: 35px;
+    background-color: #d1ecf1;
+    color: #6d7b7b;
+    line-height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin: 20px 0 0 20px;
+}
+
+#container header .down .left .message a {
+    color: #b0a8e6;
+}
+
+#container header .down .left .message a:hover {
+    color: #bfbcd4;
+}
+
+#container header .down .left .ad {
+    width: 645px;
+    height: 90px;
+    text-align: center;
+    margin: 10px 0 0 20px;
+    background-color: var(--boxColor);
+    position: relative;
+}
+
+#container header .down .left .ad img {
+    width: 548px;
+    height: 60px;
+    margin-top: 12px;
+    z-index: 1;
+}
+
+#container header .down .left .ad .overlay {
+    width: 548px;
+    height: 60px;
+    margin-top: 12px;
+    position: absolute;
+    top: 0;
+    left: 48px;
+    z-index: 2;
+    opacity: 0;
+}
+
+#container header .down .left .ad .overlay:hover {
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+#container header .down .right {
+    width: 270px;
+}
+
+#container header .down .right .ad {
+    width: 248px;
+    height: 210px;
+    background-color: var(--boxColor);
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#container header .down .right .ad img {
+    width: 228px;
+    height: 190px;
+    margin-top: 12px;
+    z-index: 1;
+}
+
+#container header .down .right .ad .overlay {
+    width: 228px;
+    height: 190px;
+    z-index: 2;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    opacity: 0;
+}
+
+#container header .down .right .ad .overlay:hover {
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+#container header .down .right .filter {
+    width: 248px;
+    height: 222px;
+    background-color: var(--boxColor);
+}
+
+#container header .down .right .filter h3 {
+    font-family: Bangers, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 5px 10px;
+    display: inline-block;
+}
+
+#container header .down .right .content {
+    width: 248px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container header .down .right .filter .lFilter {
+    width: 120px;
+    margin-left: 5px;
+}
+
+#container header .down .right .filter ._1Filter {
+    width: 108px;
+}
+
+#container header .down .right .filter ._1Filter select {
+    width: 108px;
+    height: 25px;
+    background-color: #262626;
+    color: var(--txtColor);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#container header .down .right .filter .rFilter {
+    width: 120px;
+}
+
+#container header .down .right .filter .btnFilter {
+    background-color: var(--btnColor);
+    width: 248px;
+    height: 38px;
+    position: relative;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+#container header .down .right .filter .btnFilter:hover, #container header .down .right .filter .btnFilter:hover input[name="filter"] {
+    background-color: var(--btnColorhover);
+}
+
+#container header .down .right .filter .btnFilter .icon {
+    font-size: 25px;
+    position: absolute;
+    top: 7px;
+    left: 90px;
+}
+
+#container header .down .right .filter .btnFilter input[name="filter"] {
+    font-size: 25px;
+    background-color: var(--btnColor);
+    color: var(--txtColor);
+    margin: 5px 0 0 115px;
+    cursor: pointer;
+}
+
+/* ==========================================CONTENT - LEFT========================================== */
+#container #content {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#container #content .left {
+    width: 670px;
+}
+
+#container #content .left h2 {
+    font-family: Bangers, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    margin: 10px 0 0 12px;
+    font-size: 22px;
+}
+
+/* ==========================================LEFT - FILM CONTENT========================================== */
+
+#container #content .left .filmContent {
+    margin-left: 20px;
+}
+#container #content .left .listFilm {
+    width: 645px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#container #content .left .listFilm ._1Col {
+    width: 120px;
+}
+
+#container #content .left .listFilm ._1Col ._1Film {
+    width: 120px;
+    height: 195px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#container #content .left .listFilm ._1Col ._1Film img {
+    display: block;
+    width: 120px;
+    height: 155px;
+    z-index: 1;
+    margin-bottom: 5px;
+}
+
+#container #content .left .listFilm ._1Col ._1Film a {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    color: var(--txtColor2);
+    font-size: 16px;
+}
+
+#container #content .left .listFilm ._1Col ._1Film .process {
+    width: 45px;
+    height: 17px;
+    line-height: 17px;
+    position: absolute;
+    z-index: 2;
+    font-weight: bold;
+    background-color: var(--btnColor);
+    font-size: 10px;
+    right: 0;
+    bottom: 40px;
+}
+
+#container #content .left .listFilm ._1Col ._1Film .overlay {
+    width: 120px;
+    height: 155px;
+    background-color: #000000;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#container #content .left .listFilm ._1Col ._1Film .icon {
+    font-size: 55px;
+    z-index: 4;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    opacity: 0;
+}
+
+#container #content .left .listFilm ._1Col ._1Film:hover span {
+    color: var(--txtColor);
+}
+
+#container #content .left .listFilm ._1Col ._1Film:hover .overlay {
+    opacity: 0.4;
+}
+
+#container #content .left .listFilm ._1Col ._1Film:hover .icon {
+    opacity: 1;
+}
+
+/* ==========================================LEFT - AD========================================== */
+
+#container #content .left .ad {
+    width: 645px;
+    height: 170px;
+    text-align: center;
+    margin: 10px 0 0 20px;
+    background-color: var(--boxColor);
+    position: relative;
+}
+
+#container #content .left .ad img {
+    width: 548px;
+    height: 152px;
+    margin-top: 12px;
+    z-index: 1;
+}
+
+#container #content .left .ad .overlay {
+    width: 548px;
+    height: 152px;
+    margin-top: 12px;
+    position: absolute;
+    top: 0;
+    left: 48px;
+    z-index: 2;
+    opacity: 0;
+}
+
+#container #content .left .ad .overlay:hover {
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+/* ==========================================LEFT - SCHEDULE========================================== */
+#container #content .left .schedule {
+    width: 645px;
+    background-color: var(--boxColor);
+    margin: 20px 0 0 20px;
+    position: relative;
+}
+
+#container #content .left .schedule span.showAll {
+    background-color: var(--btnSchedule);
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+#container #content .left .schedule span a {
+    color: var(--txtColor2);
+}
+
+#container #content .left .schedule span a:hover {
+    color: var(--txtColor);
+}
+
+#container #content .left .schedule .timeline {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#container #content .left .schedule .timeline .scheduleBtn {
+    width: 70px;
+    height: 50px;
+    background-color: var(--bgSchedule);
+    text-align: center;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    transition: 0.4s;
+}
+
+#container #content .left .schedule .timeline .scheduleBtn:hover {
+    background-color: var(--btnSchedule);
+}
+
+#container #content .left .schedule .timeline .scheduleBtn h3 {
+    margin-top: 10px;
+}
+
+#container #content .left .schedule .timeline .scheduleBtn a {
+    color: var(--txtColor2);
+    display: block;
+    transition: 0.4s;
+}
+
+#container #content .left .schedule .timeline .scheduleBtn a:hover {
+    color: var(--txtColor);
+    font-size: 13px;
+}
+
+#container #content .left .schedule .timeline .icon {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+#container #content .left .schedule .timeline .toLeft, #container #content .left .schedule .timeline .toRight {
+    width: 25px;
+}
+
+#container #content .left .schedule .timeline .active {
+    background-color: var(--btnColor);
+}
+
+#container #content .left .schedule .timeline .active:hover {
+    background-color: var(--btnColor);
+}
+
+#container #content .left .schedule .mainSchedule {
+    margin-top: 10px;
+}
+
+#container #content .left .schedule .mainSchedule ._1colSche {
+    width: 645px;
+    height: 35px;
+    display: flex;
+    position: relative;
+    transition: 0.4s;
+}
+
+#container #content .left .schedule .mainSchedule .gray {
+    background-color: var(--bgSchedule);
+}
+
+#container #content .left .schedule .mainSchedule ._1colSche span.time {
+    display: block;
+    width: 60px;
+    font-size: 25px;
+    color: var(--txtColor2);
+    margin: 5px 0 0 10px;
+}
+
+#container #content .left .schedule .mainSchedule ._1colSche span.title {
+    display: block;
+    width: 585px;
+    font-size: 14px;
+    color: var(--txtColor3);
+    margin: 13px 0 0 20px;
+}
+
+#container #content .left .schedule .mainSchedule ._1colSche .btnEpisode {
+    width: 85px;
+    height: 15px;
+    background-color: var(--btnSchedule);
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: var(--txtColor2);
+    transition: 0.4s;
+}
+
+#container #content .left .schedule .mainSchedule ._1colSche .btnEpisode .icon {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+#container #content .left .schedule .mainSchedule ._1colSche .btnEpisode span.txtEpisode {
+    margin-left: 10px;
+}
+
+
+#container #content .left .schedule .mainSchedule ._1colSche:hover {
+    background-color: var(--btnSchedule);
+}
+
+#container #content .left .schedule .mainSchedule ._1colSche:hover .btnEpisode {
+    background-color: var(--btnColor);
+}
+
+/* ==========================================CONTENT - RIGHT========================================== */
+
+#container #content .right {
+    width: 270px;
+}
+
+#container #content .right .ad {
+    width: 248px;
+    height: 210px;
+    background-color: var(--boxColor);
+    text-align: center;
+    position: relative;
+}
+
+#container #content .right .ad img {
+    width: 228px;
+    height: 190px;
+    margin-top: 12px;
+    z-index: 1;
+}
+
+#container #content .right .ad .overlay {
+    width: 228px;
+    height: 190px;
+    z-index: 2;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    opacity: 0;
+}
+
+#container #content .right .ad .overlay:hover {
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+/* ==========================================RIGHT - TOP ANIME========================================== */
+#container #content .right .topAnime {
+    background-color: var(--boxColor);
+    margin-top: 10px;
+    width: 248px;
+}
+
+#container #content .right .topAnime {
+    background-color: var(--boxColor);
+    margin-top: 10px;
+    width: 248px;
+}
+
+#container #content .right .topAnime h2 {
+    display: inline-block;
+    font-family: Bangers, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 10px 12px;
+    font-size: 22px;
+}
+
+#container #content .right .topAnime .top1 {
+    width: 248px;
+    height: 120px;
+    background: url(../images/film/top/onepiece.png);
+    position: relative;
+}
+
+#container #content .right .topAnime .buy {
+    background: url(../images/film/top/spiritedaway.jpg);
+}
+
+#container #content .right .topAnime a {
+    display: block;
+}
+
+#container #content .right .topAnime .top1 .overlay {
+    width: 248px;
+    height: 120px;
+    background: linear-gradient(transparent, #000000);
+    z-index: 5;
+}
+
+.right .topAnime .top1 .info {
+    width: 248px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 5px;
+    z-index: 10;
+}
+
+.right .topAnime .top1 .info .infoRank {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffffee;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    font: bold 20px/30px ChakraPetch, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
+}
+
+.right .topAnime .top1 .info .infoDetail {
+    width: 192px;
+    font-size: 13px;
+}
+
+.right .topAnime .top1 .info .infoDetail p.title {
+    font-weight: bold;
+    color: #ffffffee;
+}
+
+.right .topAnime .top1:hover .info .infoRank {
+    color: var(--btnColor);
+    transform: rotate(360deg);
+}
+
+.right .topAnime .top1:hover .info .infoDetail p.title {
+    color: var(--btnColor);
+}
+
+.right .topAnime .topOther {
+    width: 248px;
+    height: 60px;
+}
+
+.right .topAnime .topOther .info {
+    width: 248px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.right .topAnime .topOther .info .infoRank {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #353535;
+    color: #353535;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    font: bold 20px/30px ChakraPetch, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right .topAnime .topOther .info .infoImage {
+    width: 35px;
+}
+
+.right .topAnime .topOther .info .infoImage img {
+    width: 35px;
+}
+
+.right .topAnime .topOther .info .infoDetail {
+    width: 150px;
+    font-size: 13px;
+    color: #dbdbdb;
+}
+
+.right .topAnime .topOther .info .infoDetail .title {
+    font-weight: bold;
+}
+
+
+.right .topAnime .topOther:hover p {
+    color: var(--btnColor);
+}
+
+.right .topAnime .topOther:hover .info .infoRank {
+    color: var(--btnColor);
+}
+
+/* ==========================================FOOTER========================================== */
+footer {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    background: var(--boxColor);
+    position: relative;
+}
+
+footer .left {
+    width: 50%;
+    color: #a6ab9d;
+    font-size: 15px;
+    margin: 10px 0 0 20px;
+}
+
+footer .left p {
+    margin: 10px 0;
+}
+
+footer .left .iconSW a {
+    color: var(--boxColor);
+    display: block;
+}
+
+footer .left .iconSW .boxIcon {
+    background-color: #ABABAB;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 15px;
+    float: left;
+}
+
+footer .left .iconSW .boxIcon .icon {
+    font-size: 20px;
+}
+
+footer .left p.disclaim {
+    font-size: 12px;
+    text-align: justify;
+}
+
+footer .right {
+    width: 50%;
+    display: flex;
+    font-family: ChakraPetch, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
+}
+
+footer .right a {
+    color: #ABABAB;
+    font-size: 14px;
+}
+
+footer .right a:hover {
+    color: var(--txtColor);
+}
+
+footer .right .struct {
+    margin-top: 20px;
+    width: 40%;
+}
+
+footer .right .link {
+    margin-top: 20px;
+    width: 60%;
+}
+
+footer .representChar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ==========================================NAVIGATION BAR========================================== */
+.navBar {
+    width: 50px;
+    height: 120px;
+    background-color: var(--btnColor);
+    position: fixed;
+    top: 20%;
+    left: 0;
+}
+
+.navBar a {
+    display: block;
+}
+
+.navBar .icon {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 5px;
+    display: block;
+}
+
+.navBar a:hover {
+    background-color: rgb(238, 238, 89);
+}
+
+/*=====================================================BREADCRUMB=====================================================*/
+
+.breadcrumb {
+    margin-left: 15px;
+    font-family: ChakraPetch, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.breadcrumb ul li {
+    float: left;
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(219, 218, 218);
+}
+
+.breadcrumb ul li.child::before {
+    content: ">";
+    margin-right: 5px;
+    color: var(--txtColor2);
+}
+
+.breadcrumb ul li a {
+    color: var(--txtColor3);
+}
+
+.breadcrumb ul li:hover, .breadcrumb ul li a:hover {
+    color: var(--txtColor);
+}

@@ -1,0 +1,197 @@
+:root {
+    --bgColor: #000000;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --mainfont: Ubuntu;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bangers;
+    src:url('../fonts/Bangers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================USER========================================== */
+
+
+.ubox .uboxleft .utexttrai li a
+{
+    display: block;
+    padding-left:10px;
+}
+
+.ubox .uboxleft .utexttrai li.active
+{
+    background-color: var(--btnColor);
+}
+
+.ubox .uboxleft .utexttrai li.active:hover
+{
+    background-color: var(--btnColor);
+}
+
+.ubox .uboxleft .utexttrai li:hover
+{
+    background-color:var(--bgSchedule);
+    
+}
+
+.uboxleft
+{
+
+    background-color: var(--boxColor);
+    width: 250px;
+    height:706px;
+    margin-top: 40px;
+    position: relative;
+    left: 18px;
+}
+    
+.utextt {
+    color:--txtColor;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    background-color: var(--btnColor);
+    width:226px;
+    text-align: center;
+  }
+
+  .utexttrai
+  {
+
+  word-spacing: 2px;
+  line-height: 50px;
+  font-size: 14px;
+  margin-top: 40px;
+  right: 10px;
+  }
+
+  .uboxright
+  {
+
+    
+    width: 650px;
+    height:300px;
+    margin-top: 40px;
+    position: relative;
+    right: 18px;
+    
+  }
+
+.ubox
+{
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.utextp {
+    color:var(--btnColor);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    word-spacing: 7px;
+  }
+  
+  .utextinput
+  {
+    width: 130px  ;
+    word-spacing: 2px;
+    line-height: 50px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    right: 10px;
+    text-align: right;
+    float:left;
+  }
+  
+  .uinput
+  {
+    width: 400px  ;
+    word-spacing: 2px;
+    line-height: 50px;
+    font-size: 14px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+    text-align: left;
+    float:left;
+
+
+  }
+  input[type="text"]
+  {
+    width: 200px;
+    height:25px;
+
+  }
+
+  .ubox .uboxright .tinput li:hover
+  {
+
+    background-color:var(--btnColor );
+    display: inline;
+    
+
+  }
+  .tinput
+{
+  color:var(--btnColorhover);
+  width: 400px  ;
+  word-spacing: 2px;
+  line-height: 50px;
+  font-size: 14px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  margin-left:20px;
+  text-align: left;
+  float:left;
+  font-weight: bold;
+}

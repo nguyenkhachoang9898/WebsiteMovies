@@ -1,0 +1,114 @@
+:root {
+    --bgColor: #000000;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --mainfont: Ubuntu;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bangers;
+    src:url('../fonts/Bangers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================FILM MUA========================================== */
+
+
+
+.fboxright
+{
+
+  background-color: var("--bgColor");
+  width: 650px;
+  height:800px;
+  margin-top:40px;
+  right: 18px;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  position: relative;
+  
+  
+  
+}
+
+.fboxfilm1
+{
+    width: 150px;
+    height: 195px;
+    background-color: blue;
+    margin-top:40px;   
+}
+.fboxfilm1 img
+{
+    width: 150px;
+    height: 195px;
+
+
+}
+.ftextt {
+    height: 80px;
+    color:var(--txtColor);
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    padding: 8px 0px;
+    word-spacing: 3px;
+    
+  }
+
+
+  
+
+  
+
+
+
+
+
+
+
+

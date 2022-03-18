@@ -1,0 +1,192 @@
+/* File này để bổ sung cho trang Category */
+
+:root {
+    --bgColor: #000000;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --mainfont: Ubuntu;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bangers;
+    src:url('../fonts/Bangers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*=====================================================BREADCRUMB=====================================================*/
+.filterCate {
+    width: 645px;
+    height: 80px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--boxColor);
+    border-radius: 5px;
+}
+
+.filterCate .field1 {
+    width: 115px;
+}
+
+.filterCate .field1 select {
+    width: 115px;
+    height: 20px;
+    background-color: #262626;
+    color: var(--txtColor);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.filterCate .field1 select.down {
+    margin-bottom: 0;
+}
+
+.filterCate .field2 {
+    width: 145px;
+    margin-left: 5px;
+}
+
+.filterCate .field2 input[type="search"] {
+    width: 145px;
+    height: 20px;
+    border: 2px solid var(--btnSchedule);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+
+.filterCate .btnFilter {
+    background-color: var(--btnColor);
+    width: 145px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.filterCate .btnFilter:hover, .filterCate .btnFilter:hover input[name="filter"] {
+    background-color: var(--btnColorhover);
+}
+
+.filterCate .btnFilter .icon {
+    font-size: 12px;
+    position: absolute;
+    top: 4px;
+    left: 50px;
+}
+
+.filterCate .btnFilter input[name="filter"] {
+    font-size: 15px;
+    background-color: var(--btnColor);
+    color: var(--txtColor);
+    font-weight: bold;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+/*=====================================================PAGINATION=====================================================*/
+
+.pagination {
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 20px auto;
+}
+
+.pagination .btnPreNext {
+    width: 100px;
+    height: 20px;
+    background-color: var(--btnColor);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.pagination a {
+    display: block;
+}
+
+.pagination .pageNumber {
+    width: 142px;
+    display: flex;
+    align-items: center;
+}
+
+.pagination .pageNumber .numberBox {
+    width: 33px;
+    height: 33px;
+    border: 1px solid var(--txtColor3);
+}
+
+.pagination .pageNumber .numberBox input {
+    width: 16px;
+    height: 33px;
+    background: transparent;
+    color: var(--txtColor);
+    padding-left: 15px;
+}
+
+.pagination .pageNumber .btnBox {
+    width: 35px;
+    height: 35px;
+    background-color: var(--btnColor);
+    text-align: center;
+    line-height: 35px;
+}
+
+.pagination .pageNumber span:first-child {
+    margin-right: 5px;
+}
+
+.pagination .pageNumber span:last-child {
+    margin-left: 5px;
+}
+
+.pagination .btnPreNext:hover, .pagination .pageNumber .btnBox:hover {
+    background-color: var(--btnColorhover);
+}

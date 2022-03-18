@@ -1,0 +1,124 @@
+:root {
+    --bgColor: #000000;
+    --bgColor2: #FFFFFF;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --mainfont: Ubuntu;
+}
+#container #content .left {
+	width: 670px;
+	background: var(--btnSchedule);
+}
+#container #content .newscont {
+	margin-left: 10px;
+}
+#container #content .newscont h2 {
+	margin-bottom: 24px;
+}
+#container #content .left .listnews {
+	width: 645px;
+	display: flex;
+	justify-content: space-between;
+}
+#container #content .left .listnews .news_col {
+	width: 310px;
+	margin-left: 14px;
+}
+#container #content .left .listnews .news_col .news_cel {
+	width: 310px;
+	height: 200px;
+	margin-bottom: 20px;
+	position: relative;
+}
+#container #content .left .listnews .news_col .news_cel img {
+	width: 308px;
+	height: 200px;
+	border: 1px solid white;
+	background: linear-gradient(#ccc,#000);
+	transition: all 0.5s;
+}
+#container #content .left .listnews .news_col .news_cel img:hover {
+	border: 1px solid red;
+	transform: scale(1.1);
+}
+#container #content .left .listnews .news_col .news_cel a {
+	font-weight: normal;
+	font-size: 11px;
+	display: block;
+	background: linear-gradient(#87898C,#000);
+	opacity: 80%;
+	width: 310px;
+	height: 35px;
+	z-index: 2;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+#container #content .left .listnews .news_col .news_cel a:hover {
+	font-size: 13px;
+}
+/*===================== Box News ==========================*/
+#container #content .left .newssum {
+	margin: 20px 20px;
+	position: relative;
+}
+#container #content .left .newssum .tieude {
+	height: 50px;
+	line-height: 50px;
+	display: flex;
+}
+#container #content .left .newssum .tieude h5 {
+	display: block;
+	font-size: 18px;
+	margin-left: 30px;
+}
+#container #content .left .newssum .tieude h5:hover {
+	background: var(--bgColor2);
+	color: #000;
+	cursor: pointer;
+}
+#container #content .left .newssum .boxnews-back {
+	position: relative;
+	z-index: 1;
+}
+#container #content .left .newssum .boxnews {
+	border: 1px solid white;
+}
+#container #content .left .newssum  #boxnews-tuan {
+	display: none;
+	z-index: 2;
+}
+#container #content .left .newssum .boxnews .bn-row {
+	margin: 30px auto;
+}
+#container #content .left .newssum .boxnews .bn-row a {
+	width: 670px;
+	height: 130px;
+	display: flex;
+	margin-top: 20px;
+}
+#container #content .left .newssum .boxnews .bn-row a img {
+	width: 200px;
+	height: 130px;
+	margin-left: 20px;
+	border: 1px solid white;
+	transition: all 0.5s;
+}
+#container #content .left .newssum .boxnews .bn-row a img:hover {
+	transform: scale(1.1);
+}
+#container #content .left .newssum .boxnews .bn-row a p {
+	display: block;
+	width: 380px;
+	text-align: justify;
+	margin: 20px 10px 0 20px;
+}
+#container #content .left .newssum .boxnews .bn-row a p:hover {
+	color: yellow;
+}

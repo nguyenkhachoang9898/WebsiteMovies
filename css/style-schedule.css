@@ -1,0 +1,91 @@
+:root {
+    --bgColor: #000000;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --bgSchedule1: #4EED0F;/*Tập*/
+    --bgSchedule2: #144DA2;/*Thứ*/
+    --mainfont: Ubuntu;
+}
+/*===================Schedule==============================*/
+#content {
+    width: 960px;
+    height: 1740px;
+}
+#content .schedule-box {
+    margin-left: 20px;
+    background: var(--bgSchedule);
+}
+#content .schedule-box h2 {
+    font-family: sans-serif;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 30px;
+}
+#content .schedule-box .schedule-list .thu {
+    text-align: center;
+    background: var(--bgSchedule2);
+    margin-top: 20px;
+    height: 20px;
+    width: 960px;
+    line-height: 20px;
+}
+#content .schedule-box .schedule-row {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+#content .schedule-box .schedule-row .schedule-cel {
+    position: relative;
+    z-index: 1; 
+    border: 1px solid white;
+    width: 143px;
+}
+#content .schedule-box .schedule-row .schedule-cel:hover {
+    border: 1px solid red;
+}
+#content .schedule-box .schedule-row .detrong {
+    width: 143px;
+    background: var(--bgSchedule);
+}
+#content .schedule-box .schedule-row .schedule-cel .time {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: block;
+    background: var(--bgColor);
+    color: var(--txtColor);
+    z-index: 4;
+    display: block;
+    width: 140px;
+    text-align: center;
+    opacity: 70%;
+    height: 15px;
+}
+#content .schedule-box .schedule-row .schedule-cel a img {
+    width: 140px;
+    height: 200px;
+}
+#content .schedule-box .schedule-row .schedule-cel .tap {
+    font-size: 15px;
+    position: absolute;
+    bottom: 19px;
+    left: 0;
+    display: block;
+    background: var(--bgSchedule1);
+    color: var(--txtColor);
+    z-index: 4;
+    padding: 2px;
+}
+#content .schedule-box .schedule-row .schedule-cel .tuade {
+    font-size: 10px;
+    width: 143px;
+    text-align: center;
+    margin-left: 3px;
+}

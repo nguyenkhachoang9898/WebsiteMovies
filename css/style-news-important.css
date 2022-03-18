@@ -1,0 +1,69 @@
+:root {
+    --bgColor: #000000;
+    --bgColor1: #10AB21;/* the loai */
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --bgTheLoai: #258EE9;
+    --mainfont: Ubuntu;
+}
+#container #content .left {
+	width: 640px;
+}
+#container #content .left #theloai {
+	background: var(--bgColor1);
+	font-size: 13px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+#container #content .newscont {
+	width: 640px;
+	padding: 15px 15px 15px 15px;
+	background: var(--btnSchedule);
+}
+#container #content .newscont p {
+	text-align: justify;
+	text-indent: 30px;
+	margin-top: 10px;
+}
+#container #content .newscont h3 {
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+#container #content .newscont blockquote {
+	text-align: right;
+	font-weight: 100;
+}
+#container #content .newscont .thuoctinh {
+	display: flex;
+	margin-top: 10px;
+}
+#container #content .newscont .thuoctinh i {
+	margin-left: 20px;
+}
+#container #content .newscont .thuoctinh a {
+}
+#container #content .newscont img {
+	width: 85%;
+	margin: 10px 0 10px 50px;
+}
+/*================================HOMEBACK( cuối trang HTML)==========================================*/
+#scrollTop {
+	width: 60px;
+	height: 60px;
+	border: 3px solid white;
+	border-radius: 30px;
+	text-align: center;
+	position: fixed;
+	bottom: 50px;
+	right: 30px;
+}
+#scrollTop .icon {
+	font-size: 60px;
+}

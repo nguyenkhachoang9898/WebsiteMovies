@@ -1,0 +1,302 @@
+/* File này để bổ sung cho trang Detail */
+
+:root {
+    --bgColor: #000000;
+    --boxColor: #1c1c1c;
+    --txtColor: #FFFFFF;
+    --txtColor2: #a9a9a9;
+    --txtColor3: #888888;
+    --btnColor: #5a2e98;
+    --btnColorhover: #381766;
+    --btnSchedule: #343434;
+    --bgSchedule: #2c2a2a;
+    --mainfont: Ubuntu;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src:url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ChakraPetch;
+    src:url('../fonts/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bangers;
+    src:url('../fonts/Bangers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================VIDEO AREA========================================== */
+.videoArea {
+    width: 645px;
+    margin-left: 20px;
+}
+
+.videoArea video, .videoArea .controlBar {
+    position: relative;
+    z-index: 900;
+}
+
+.videoArea .controlBar {
+    height: 30px;
+    background-color: var(--boxColor);
+    font-size: 12px;
+    color: var(--txtColor2);
+    display: flex;
+}
+
+.videoArea .controlBar .controlCell {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.videoArea .controlBar .hide {
+    display: none;
+}
+
+.videoArea .controlBar .controlCell .icon {
+    margin-right: 3px;
+}
+
+.videoArea .controlBar .controlCell:hover {
+    background-color: rgb(20, 19, 19);
+    color: var(--txtColor);
+}
+
+/* ==========================================REMIND AREA========================================== */
+.remind {
+    margin: 20px 0 0 20px;
+    width: 640px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    background-color: #D2D2D2;
+    color: #2D4B64;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+/* ==========================================EPISODE SELECT AREA========================================== */
+.episodeSelect {
+    width: 645px;
+    margin: 20px 0 0 20px;
+    background-color: var(--boxColor);
+    position: relative;
+    border-radius: 5px;
+}
+
+.episodeSelect .serverSelect {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.episodeSelect .serverSelect ul li {
+    float: left;
+    width: 50px;
+    text-align: center;
+}
+
+.episodeSelect .serverSelect ul li a {
+    font-size: 14px;
+    display: block;
+    color: var(--txtColor3);
+}
+
+.episodeSelect .serverSelect ul li a.active {
+    color: var(--txtColor1);
+    background-color: var(--btnColor);
+}
+
+.episodeSelect .serverSelect ul li:hover a {
+    color: var(--txtColor2);
+}
+
+.episodeSelect .serverSelect ul li:hover a.active {
+    color: var(--txtColor);
+}
+
+.episodeSelect .number {
+    display: inline-block;
+    margin: 35px 0 0 20px;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.episodeSelect .number ._1Episode {
+    width: 35px;
+    height: 25px;
+    background-color: var(--btnSchedule);
+    text-align: center;
+    line-height: 25px;
+    border-radius: 3px;
+    margin: 0 0 10px 10px;
+    float: left;
+}
+
+.episodeSelect .number ._1Episode a {
+    display: block;
+    color: var(--txtColor2);
+}
+
+.episodeSelect .number ._1Episode a.active {
+    background-color: var(--btnColor);
+}
+
+.episodeSelect .number ._1Episode:hover {
+    background-color: var(--bgSchedule);
+}
+
+/* ==========================================INFO FILM========================================== */
+.infoFilmArea {
+    margin: 20px 0 0 20px;
+    background-color: var(--boxColor);
+    width: 645px;
+    border-radius: 5px;
+}
+
+.infoFilmArea .detailFilm {
+    display: flex;
+    width: 645px;
+    justify-content: space-between;
+}
+
+.infoFilmArea .detailFilm .imageFilm {
+    width: 160px;
+    text-align: center;
+}
+
+.infoFilmArea .detailFilm .imageFilm img {
+    width: 135px;
+    margin-top: 20px;
+}
+
+.infoFilmArea .detailFilm .textFilm {
+    width: 480px;
+    font-size: 14px;
+    color: var(--txtColor3);
+    position: relative;
+}
+
+.infoFilmArea .detailFilm .textFilm h2 {
+    font-family: ChakraPetch, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin-left: 0 !important;
+    color: rgb(228, 228, 228);
+}
+
+.infoFilmArea .detailFilm .textFilm p.altTitle {
+    margin-bottom: 10px;
+}
+
+.infoFilmArea .detailFilm .textFilm p.summary {
+    text-align: justify;
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.infoFilmArea .detailFilm .textFilm .general {
+    display: flex;
+}
+
+.infoFilmArea .detailFilm .textFilm .general ._1Col {
+    width: 240px;
+}
+
+.infoFilmArea .detailFilm .textFilm .general ._1Col p {
+    margin-bottom: 5px;
+}
+
+.infoFilmArea .detailFilm .textFilm .general ._1Col a {
+    color: var(--btnColor);
+}
+
+.infoFilmArea .detailFilm .textFilm .general ._1Col a:hover {
+    color: var(--btnColorhover);
+}
+
+.infoFilmArea .detailFilm .textFilm .general ._1Col span {
+    color: rgb(228, 228, 228);
+}
+
+.infoFilmArea .detailFilm .textFilm .rate {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.infoFilmArea .detailFilm .textFilm .rate .icon {
+    font-size: 17px;
+    width: 15px;
+}
+
+.infoFilmArea .detailFilm .textFilm .rate .yellow {
+    color: #BF9900;
+}
+
+.infoFilmArea .keyword p {
+    font-size: 13px;
+    padding: 10px;
+    color: rgb(228, 228, 228);
+}
+
+.infoFilmArea .keyword a {
+    color: var(--txtColor3);
+}
+
+.infoFilmArea .keyword a:hover {
+    color: var(--txtColor2);
+}
+
+/* ==========================================SUGGEST========================================== */
+.suggest {
+    margin: 20px 0 0 20px;
+    background-color: var(--boxColor);
+    width: 645px;
+}
+
+/* ==========================================ON / OFF LIGHT========================================== */
+.offlight {
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bgColor);
+    opacity: 0.9;
+    display: none;
+}
